@@ -1,8 +1,5 @@
 \documentclass[11pt,fleqn]{article}
 
-%% This first part is the document header, which you don't need to edit.
-%% Scroll down to \begin{document}
-
 \usepackage[latin1]{inputenc}
 \usepackage{enumerate}
 \usepackage[hang,flushmargin]{footmisc}
@@ -30,45 +27,50 @@
 \begin{document}
 \begin{center}
 {\Huge
-Problem Sheet 1 % e.g. Problem sheet 1
+Homework Assignment 1
 }\\
+Basic Java and \texttt{if} statements
 \end{center}
 
-\textit{Directions}: You may either choose to do the large assignment or do all of short assignments. We do not value doing one over the other and both are equally challenging.
-
-\begin{center}
-\textbf{Big Assignment}
-\end{center}
-
-%@TODO: Make the big assignment
-
-\begin{center}
-\textbf{Smaller Assignments}
-\end{center}
+\textit{Directions}: Please complete as many of the following as possible. If
+you can't complete all of them, it's alright. These questions are meant to
+be difficult. At the minimum, complete the first 3 questions. Feel free to
+collaborate with your peers on the problems, but please note that \underline{all
+submitted work must be your own work}. Also if you don't know a certain method,
+(for example, you want to know what \texttt{Math.pow(a,b)} is) feel free to look it
+up online. That being said, plagiarism will not tolerated.  
 
 \begin{enumerate}[Q1.]
 
 \item
-\texttt{makePerfectSquare(int x)}: A perfect square is a number that has a rational square root. $4, 9, 16, \text{ and } 25$ are examples of perfect squares. Create a method that accepts an integer and then returns the square of that number. For example:
-
-makePerfectSquare(10) should return $100$\\
-makePerfectSquare(5) should return $25$\\
-makePerfectSquare(15) should return $225$\\
-etc...
+\texttt{makePerfectSquare(int x)}: A perfect square is a number that has a rational square root. $4, 9, 16, \text{ and } 25$ are examples of perfect squares. Create a method that accepts an integer and then returns the square of that number.
 
 \item
 \texttt{isFactor(int a, int b)}: Given two integers \texttt{a} and \texttt{b}, return \texttt{true} if \texttt{b} is a factor of \texttt{a} (the remainder when \texttt{b} divides \texttt{a} is 0). Return \texttt{false} otherwise.
 
-\texttt{isFactor(15, 5)} should return \texttt{true}\\
-\texttt{isFactor(10, 2)} should return \texttt{true}\\
-\texttt{isFactor(20, 3)} should return \texttt{false}\\
-etc...
+\item
+\texttt{isSpecial(double a)}: A number is special if $\frac{a^2}{3}$ is even or if
+$a + \frac{a}{2} * 3$ is even. You may assume that $a<1000$. Test cases will not
+be provided for this method and you will need to test them on your own. 
 
 \item
-\texttt{isSpecial(int a, int b)}:
+\texttt{convertDouble(double a)}: \texttt{a} will always be a number in the form
+.xxx where x is a number. So possible values of \texttt{a} might be $.091, .234,
+.123$ so on and so forth. You need to return a type string variable that has
+this number. So inputting 123 should return ``123". You may not use any of the
+built in double to string methods for this task.  
+ So in short, \texttt{convertDouble} will accept a double  and will
+return a string of the same number. 
 
-
+\item
+\texttt{reverseNumber(int x)}: Given \texttt{x}, you need to reverse the number.
+For example, if the input is 1992, you need to return 2991. Note that \texttt{x}
+will always be less than 10,000 and greater than 1,000. 
 
 \end{enumerate}
+
+\textbf{Note}: All of these problems can be solved without the use of a loop.
+You may use a loop if you wish, but know that adding a loop may make the problem
+more complex. 
 
 \end{document}
