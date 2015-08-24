@@ -2,6 +2,7 @@
 
 \usepackage[cache=false]{minted}
 \usepackage[latin1]{inputenc}
+\usepackage{helvet}
 \usepackage{enumerate}
 \usepackage[hang,flushmargin]{footmisc}
 \usepackage{amsmath}
@@ -23,7 +24,10 @@ Class 1
 }\\
 \end{center}
 
+\begin{center}
 \section*{Goals}
+\end{center}
+
 \begin{enumerate}[1.]
 \item
 Variables
@@ -41,7 +45,10 @@ Testing our code
 Commenting/Good practices
 \end{enumerate}
 
+\begin{center}
 \section*{Variables}
+\end{center}
+
 What are variables? If you know some Algebra or Pre-Algebra, you know that
 we use variables in math to represent numbers in our equations. Essentially, a
 variable is an unknown value that we are trying to solve for. In programming,
@@ -165,7 +172,9 @@ the numerical value.
 last name. Make a third variable that will store your entire name, but you must
 define the third variable in terms of the first two. 
 
+\begin{center}
 \section*{\texttt{if} Statements}
+\end{center}
 
 Just like in real life, we need to be able to make decisions in our code. What
 if we only want the robot to turn when a button is pushed or if a joystick is
@@ -272,9 +281,32 @@ an example of how an \texttt{else if} would work:
     }
 \end{minted}
 
+Now that we know how an \texttt{else if} statement works, let's modify our code
+from before to fix the bug that we encountered:
 
+\begin{minted}{java}
+    int a = 10;
+    int b = 12;
+    int c = a + b;
 
+    if(c > 20){
+        System.out.println("Greater than 20!");
+    } else if{c = 20}{
+        System.out.println("Equal to 20");
+    } else{
+        System.out.println("Less than 20");
+    }
+\end{minted}
+
+Using this final version, we have fixed all of our bugs.
+
+\textbf{Exercise}: Make a program that will compare two numbers to each other
+and print out which one is greater. If they are equal, print that the two
+numbers are equal. Make sure to use variables. 
+
+\begin{center}
 \section*{Methods}
+\end{center}
 
 Now that we have a solid understand of variables and \texttt{if} statements we can
 begin putting them together in larger segments of code. Since Java is an
@@ -283,14 +315,46 @@ methods. Basically, a method accepts some input or a list of \textbf{parameters}
 and then \textbf{returns} a single piece of information. In java the type of the
 information that the method will return is pre-defined, but there are other
 languages where this is not the case. It is also important to note that a method
-an only return one time and only one piece of information. Let's look at how we
-would declare a method and break it down into simple terms:
+can only return information one time and can only return one piece of
+information. Let's look at how we would declare a method and break it down into
+simple terms:
 
 \begin{minted}{java}
 public int mysteryMethod(int a, String b){
     //code goes here
 }
 \end{minted}
+
+\begin{itemize}
+    \item
+        \textbf{Modifier}: public
+
+    \item
+        \textbf{return type}: int
+
+    \item
+        \textbf{Parameters}: (int a, String b)
+\end{itemize}
+
+A \textbf{modifier} describes the different forms that a method can take. Making a method
+public means that it can be accessed from anywhere. You can call it from another
+class and it can always be accessed. We will mostly be working with methods that
+are public, so it is important that you understand how to create public methods.
+
+Previously I said that Java requires you return a pre-defined type. The
+\textbf{return type} is where you define what type you will be returning. Say
+that you want your function to return an \texttt{int} value, then you would make
+the \textbf{return type} int. In this situation, our \texttt{mysteryMethod} will
+return an \texttt{int}. 
+
+Methods are powerful since they are a set of instructions that we can apply to
+any code. \textbf{Parameters} are considered to be ``input" and we need them to
+be defined each time the method is called. In this situation, whenever
+\texttt{mysteryMethod} is called, it need to be given an \texttt{int} variable
+and \texttt{String} variable. If we define a method to require
+\textbf{parameters}, it is mandatory that you provide those parameters when you
+call the method, otherwise, you will get an error. 
+
 
 
 
