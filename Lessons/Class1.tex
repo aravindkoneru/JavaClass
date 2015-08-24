@@ -29,10 +29,10 @@ Class 1
 Variables
 
 \item
-Methods
+\texttt{if} statements
 
 \item 
-\texttt{if} statements
+Methods
 
 \item
 Testing our code
@@ -160,5 +160,138 @@ be able to do so when \texttt{num1} and \texttt{num2} are large. The beauty of
 this situation is that we always know what the value of \texttt{num3} is in
 relation to that of \texttt{num1} and \texttt{num2}, but we may not always know
 the numerical value. 
+
+\textbf{Exercise}: Initialize two \texttt{String} variables with your first and
+last name. Make a third variable that will store your entire name, but you must
+define the third variable in terms of the first two. 
+
+\section*{\texttt{if} Statements}
+
+Just like in real life, we need to be able to make decisions in our code. What
+if we only want the robot to turn when a button is pushed or if a joystick is
+being used? In situations like this, we can use \texttt{if} statements to
+control the flow of our code. The way that an \texttt{if} statement works is
+pretty simple: we put a condition in the code, and if that condition is met,
+then we run a different set of code. Here is how we would construct an
+\texttt{if} statement:
+
+\begin{minted}{java}
+    if(/*condition goes here*/){
+        //code goes here
+    }
+\end{minted}
+
+A condition can be any logical operation that yields a \textbf{boolean}. A
+\textbf{boolean} can only either be true or false. Some examples of boolean
+operators in java are $>= (\ge), <= (\le), \text{ and } ==$. The code within an
+\texttt{if} statement will execute if and only if the condition is met (true).  
+Say for example we have the following code:
+
+\begin{minted}{java}
+int a = 10;
+int b = 12;
+int c = a + b;
+
+if(c > 20){
+    System.out.println("Greater than 20!");
+}
+\end{minted}
+
+Let's take a close look at what the code is doing in this situation. We declared
+three \texttt{int} variables: a,b, and c. Next, we used an \texttt{if} statement
+to check if c was greater than 20. Since \texttt{c = 12 + 10}, we know that
+\texttt{c} = 22. This means that \texttt{c > 20} and that the condition is
+satisfied. This means that the code would print ``Greater than 20!". 
+
+\textbf{Exercise}: What would happen if a = 5 and b = 10? Would the code print
+``Greater than 20!"?
+
+So know how to write simple \texttt{if} statements now, but what if we want the
+code to do something else if the condition is not met. Say for example, that we
+want the code to tell us if the value of \texttt{c} is less than 20? We can use
+the \texttt{else} statement for these situations. An \texttt{else}
+statement is used after an \texttt{if} statement like so:
+
+\begin{minted}{java}
+    if(/*condition here*/){
+        //run this code if the condition was met
+    } else{
+        //run this code if the condition was not met
+    }
+\end{minted}
+
+So if the condition in the \texttt{if} statement is not satisfied, then the code
+in the else statement will run. Think of it as an ultimatum, if something does
+not happen, then this will happen. If you use an \texttt{if-else} block of code,
+then you can always be sure that either the \texttt{if} statement code will run
+or the \texttt{else} statement code will run. Let's expand our previous example
+to print out if \texttt{c} is less than 20:
+
+\begin{minted}{java}
+    int a = 10;
+    int b = 12;
+    int c = a + b;
+
+    if(c > 20){
+        System.out.println("Greater than 20!");
+    } else{
+        System.out.println("Less than 20")
+    }
+\end{minted}
+
+Now, if the value of \texttt{c} is less than 20, the code will print ``Less than
+20". 
+
+\textbf{Exercise}: What happens if \texttt{c} = 20? Does the code do anything at
+all?
+
+Thinking about the last exercise probably gave you a headache since it shows
+that we have a fault in our logic. If c = 20, then the code will print out
+``Less than 20" because that is how an \texttt{if-else} code block works. Since
+20 is not less than 20, we go to the else and print out a false statement. This
+is a good example of ``dumb programming". Computers are dumb by design and they
+can only do what you tell them to. It is up to you to determine edge cases like
+this in you code and to accommodate for them. Situations like this arise very
+often and they can cause your code to not work like it should. 
+
+Luckily, we have a solution to this problem. We can use the \texttt{else if}
+command to check to see if c = 20. The \texttt{else if} comes right after an
+\texttt{if} statement and before an \texttt{else} statement. Basically an
+\texttt{else if} says that if the condition in the \texttt{if} is not met, then
+check to see if the condition in the \texttt{else if} is met. If that condition
+is also not satisfied, then continue on to the \texttt{else} statement. Here is
+an example of how an \texttt{else if} would work:
+
+\begin{minted}{java}
+    if(/*condition a*/){
+        //code to run if condition a is met
+    } else if{/* condition b*/}{
+        //code to run if condition a not met, but condition b is met
+    } else{
+        //code to run neither conditions are met
+    }
+\end{minted}
+
+
+
+\section*{Methods}
+
+Now that we have a solid understand of variables and \texttt{if} statements we can
+begin putting them together in larger segments of code. Since Java is an
+object-oriented programming language, we can create blocks of code called
+methods. Basically, a method accepts some input or a list of \textbf{parameters}
+and then \textbf{returns} a single piece of information. In java the type of the
+information that the method will return is pre-defined, but there are other
+languages where this is not the case. It is also important to note that a method
+an only return one time and only one piece of information. Let's look at how we
+would declare a method and break it down into simple terms:
+
+\begin{minted}{java}
+public int mysteryMethod(int a, String b){
+    //code goes here
+}
+\end{minted}
+
+
 
 \end{document}
