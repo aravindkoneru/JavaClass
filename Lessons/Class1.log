@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 AUG 2015 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 AUG 2015 22:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -450,35 +450,71 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
  [6]
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+
+(./Class1.out.pyg) [7]
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+ (./Class1.out.pyg)
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+ (./Class1.out.pyg)
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+ (./Class1.out.pyg)
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+(./Class1.out.pyg)
+\openout3 = `Class1.pyg'.
+
+runsystem(pygmentize -l java -f latex -F tokenmerge -P style=default -P command
+prefix=PYGdefault -o "Class1.out.pyg" "Class1.pyg" )...executed.
+
+ (./Class1.out.pyg [8])
 runsystem(rm "Class1.pyg")...executed.
 
 runsystem(rm "Class1.out.pyg")...executed.
 
- [7]
-(./Class1.aux) ) 
+ [9] (./Class1.aux) ) 
 Here is how much of TeX's memory you used:
- 5076 strings out of 493089
- 78133 string characters out of 6134842
+ 5088 strings out of 493089
+ 78313 string characters out of 6134842
  176305 words of memory out of 5000000
  8448 multiletter control sequences out of 15000+600000
  10351 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,35p,825b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmitt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb>
-Output written on Class1.pdf (7 pages, 118020 bytes).
+ 37i,5n,35p,825b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmitt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb>
+Output written on Class1.pdf (9 pages, 123122 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

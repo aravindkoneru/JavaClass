@@ -355,6 +355,115 @@ and \texttt{String} variable. If we define a method to require
 \textbf{parameters}, it is mandatory that you provide those parameters when you
 call the method, otherwise, you will get an error. 
 
+Let's write a method that compares two numbers:
+
+\begin{minted}{java}
+    public int compareTo(int a, int b){
+        if(a == b){
+            return 0;
+        } else if{a > b}{
+            return 1;
+        } else{
+            return -1;
+        }
+    }
+\end{minted}
+
+Let's break this method down and look at what it is doing. There are a few
+essential questions you need to ask yourself when reading a method to determine
+its function:
+
+\begin{enumerate}[1.]
+\item
+What is the name of the method?
+
+\item
+What is the return type of the method?
+
+\item
+What is the modifier of the method?
+
+\item
+What are the parameters and how are they used?
+
+\item
+What is the method trying to accomplish (read the code within the method)?
+\end{enumerate} 
+
+The first four questions have to do with how we declare the method.
+
+\textbf{Exercise}: Answer the first four questions about the sample method.
+
+Alright now we are faced with the question of what  this method doing? If
+we look closely at the code we are essentially just comparing two numbers and
+returning either 1, 0, or -1 depending on the relationship between a and b.
+
+When looking at this method, we are faced with a keyword that we have not seen
+before: \texttt{return}. Previously, I said that every method can only return a
+single piece of information. The \texttt{return} keyword ensures that you are
+giving a value back when the method is called. I understand this is a little
+abstract, but try to follow me through this example. Say that we have the
+following method:
+
+\begin{minted}{java}
+public int addThis(int a, int b){
+    return a+b;
+}
+\end{minted}  
+
+Suppose that we call this method in the following manner:
+
+\begin{minted}{java}
+int sum = addThis(7,9);
+\end{minted} 
+ 
+This expression is the equivalent of saying:
+
+\begin{minted}{java}
+int sum = 16;
+\end{minted}
+
+Hopefully you understand what the \texttt{return} keyword does. If you don't
+feel free to ask me a question the next time you see me. 
+
+\textbf{Exercise}: Make a method that accepts two integers. If the sum of the
+integers are greater than 50, return the sum of the integers. If the product of
+the two numbers is greater than 20 return the product of the two integers. If
+neither of these conditions is met, return 0.
+
+\begin{center}
+\section*{Testing our Code}
+\end{center}
+
+We currently have all the tools we need to be to able to write some simple code.
+Before we can begin writing larger methods and making cool code, we need to
+learn a little bit about how classes are organized. 
+
+Say that we make a new \textbf{class} in Android Studio named \texttt{test}. We
+can expect to see the following in the class:
+
+\begin{minted}{java}
+public class test{
+
+}
+\end{minted}
+
+We really can't run any code with just this template. We need to add a special
+method in the class in order to run code. It should look like:
+
+\begin{minted}{java}
+public class test{
+    
+    //methods and stuff go here    
+    
+    public static void main(String[] args){
+        
+        //tester code goes here    
+
+    }    
+
+}
+\end{minted}
 
 
 
