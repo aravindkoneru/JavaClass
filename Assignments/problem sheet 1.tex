@@ -38,15 +38,22 @@ be difficult. At the minimum, complete the first 3 questions. Feel free to
 collaborate with your peers on the problems, but please note that \underline{all
 submitted work must be your own work}. Also if you don't know a certain method,
 (for example, you want to know what \texttt{Math.pow(a,b)} is) feel free to look it
-up online. That being said, plagiarism will not tolerated.  
+up online. That being said, plagiarism will not tolerated. Also as a note to
+parents, I would appreciate it if you did not help your children (give them the
+answer). Feel free to give them advice, but please do not straight out give them
+the answer.    
 
 \begin{enumerate}[Q1.]
 
 \item
-\texttt{makePerfectSquare(int x)}: A perfect square is a number that has a rational square root. $4, 9, 16, \text{ and } 25$ are examples of perfect squares. Create a method that accepts an integer and then returns the square of that number.
+\texttt{compareTo(int a, int b)}: Your goal is to compare \texttt{a} to
+\texttt{b} and return a number that represents the relationship between the
+two. If \texttt{a} is greater than \texttt{b} return 1. If \texttt{a} is less
+than \texttt{b}, return -1. If \texttt{a} is equal to \texttt{b} return 0. 
 
 \item
-\texttt{isFactor(int a, int b)}: Given two integers \texttt{a} and \texttt{b}, return \texttt{true} if \texttt{b} is a factor of \texttt{a} (the remainder when \texttt{b} divides \texttt{a} is 0). Return \texttt{false} otherwise.
+\texttt{evenAndMultiple(int x)}: If a number is both even and a multiple of 7, then
+return \texttt{true}. Otherwise, return \texttt{false}.
 
 \item
 \texttt{isSpecial(double a)}: A number is special if $\frac{a^2}{3}$ is even or if
@@ -54,13 +61,12 @@ $a + \frac{a}{2} * 3$ is even. You may assume that $a<1000$. Test cases will not
 be provided for this method and you will need to test them on your own. 
 
 \item
-\texttt{convertDouble(double a)}: \texttt{a} will always be a number in the form
-.xxx where x is a number. So possible values of \texttt{a} might be $.091, .234,
-.123$ so on and so forth. You need to return a type string variable that has
-this number. So inputting .123 should return ``.123". You may not use any of the
-built in double to string methods for this task.  
- So in short, \texttt{convertDouble} will accept a double  and will
-return a string of the same number. 
+\texttt{calcValue(String a)}: The value of a string is determined by the length
+of the string and a variety of other factors. If the length of a string is even,
+then the value of the string is calculated by multiplying the length of the
+string by 7. If this value is divisible by 3, then divide the value of the
+string by 3. If both of these conditions are met, return the value of the
+number. Otherwise, just return 0.  
 
 \item
 \texttt{reverseNumber(int x)}: Given \texttt{x}, you need to reverse the number.

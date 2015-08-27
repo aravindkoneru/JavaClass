@@ -1,40 +1,54 @@
 public class Assignment1{
-
-	public int makePerfect(int x){
-		return Math.pow(x,2);
-	}
-
-	public boolean isFactor(int a, int b){
-		
-		return a%b == 0;
-	}
-
-    public boolean isSpecial(int a){
-       double case1 = Math.pow(a,2)/3;
-       if(case1 % 2 == 0){
-           return true;
-       } 
-
-       double case2 = a + (a/2) * 3;
-       return case2 % 2 == 0; 
+    
+    public int compareTo(int a, int b){
+        //code for question 1 goes here
     }
 
-    public String convertDouble(a){
-        String number = "";
-        //@TODO: Finish this method 
+    public int evenAndMultiple(int x){
+        //code for question 2 goes here
     } 
 
-    public double reverseNumber(int x){
-        //@TODO: finish this method
+    public boolean isSpecial(double a){
+        //code for question 3  goes here
+    }
+
+    public int calcValue(String x){
+        //code for questin 4 goes here
+    }
+
+    public int reverseNumber(int x){
+        //code for question 5 goes here
     } 
+    
 
 	public static void main(String[] args){
 		
 		Assignment1 tester = new Assignment1();
+        
+        System.out.println("Testing compareTo...");
+        assert(compareTo(8,8) == 0);
+        assert(compareTo(8,0) == 1);
+        assert(compareTo(0,8) == -1);
 
-		System.out.println(tester.makePerfect(10));
-		System.out.println(tester.isFactor(10,5));
-        System.out.println(tester.isSpecial(9));
+        System.out.println("Testing evenAndMultiple...");
+        assert(evenAndMultiple(9) == false);
+        assert(evenAndMultiple(14) == true);
+        assert(evenAndMultiple(7168) == true);
+
+        System.out.println("Testing isSpecial...");
+        assert(isSpecial(500) == true);
+        assert(isSpecial(75) == true);
+        //Make your own test case
+        //assert(isSpecial() == true);
+        
+        System.out.println("Testing calcValue...");
+        assert(calcValue("coding") == );
+        assert(calcValue("java") == );
+        assert(calcValue("Android") == );
+
+        System.out.println("Testing reverseNumber...");
+        assert(reverseNumber(243) == 342);
+        assert(reverseNumber(918) == 819);
+        assert(reverseNumber(510) == 15);
 	}	
-
 }
