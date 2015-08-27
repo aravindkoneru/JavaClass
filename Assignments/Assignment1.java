@@ -38,13 +38,11 @@ public class Assignment1{
         System.out.println("Testing isSpecial...");
         assert(isSpecial(500) == true);
         assert(isSpecial(75) == true);
-        //Make your own test case
-        //assert(isSpecial() == true);
         
         System.out.println("Testing calcValue...");
-        assert(calcValue("coding") == );
-        assert(calcValue("java") == );
-        assert(calcValue("Android") == );
+        assert(calcValue("coding") == 14 );
+        assert(calcValue("java") == 0 );
+        assert(calcValue("Android") == 0 );
 
         System.out.println("Testing reverseNumber...");
         assert(reverseNumber(243) == 342);
