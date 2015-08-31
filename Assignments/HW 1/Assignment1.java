@@ -1,15 +1,33 @@
 public class Assignment1{
     
     public int compareTo(int a, int b){
-        //code for question 1 goes here
+        if(a > b){
+            return 1;
+        } else if(a < b){
+            return -1;
+        } else{
+            return 1;
+        }
     }
 
     public int evenAndMultiple(int x){
-        //code for question 2 goes here
+        if(x % 2 == 0 && x % 7 == 0){
+            return true;
+        }
+        return false;
     } 
 
     public boolean isSpecial(double a){
-        //code for question 3  goes here
+        double case1 = Math.pow(a,2)/3;
+        if(case1 % 2 == 0){
+            return true;
+        }
+
+        double case2 = a + (a/2) * 3;
+        if(case2 % 2 == 0){
+            return true;
+        }
+        return false;
     }
 
     public int calcValue(String x){
@@ -17,13 +35,13 @@ public class Assignment1{
     }
 
     public int reverseNumber(int x){
-        //code for question 5 goes here
+        
     } 
     
 
 	public static void main(String[] args){
 		
-		Assignment1 tester = new Assignment1();
+        Assignment1 tester = new Assignment1();
         
         System.out.println("Testing compareTo...");
         assert(compareTo(8,8) == 0);

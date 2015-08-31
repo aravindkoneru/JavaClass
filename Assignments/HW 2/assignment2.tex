@@ -1,0 +1,82 @@
+\documentclass[11pt,fleqn]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\begin{document}
+\begin{center}
+{\Huge
+Homework 2
+}\\
+\end{center}
+
+\textbf{Overview}: Last class, we worked with the new android system in order to make our robot
+move. This is a good start, but all we really did was modify the code that
+already existed, we didn't really make any code from scratch. For this
+assignment, you should write all the code from scratch. \underline{We will be
+deploying your code next class} so be sure to do your best! Try to at least
+complete the first 2 problems.
+
+\section*{Assignment Brief}
+
+In the last class, we made the robot move in such a way that one joystick
+controlled the throttle  and the other joystick controlled
+the direction. For your homework you need to make each side of the robot
+dependent on the joystick. For example, if I push the right joystick forward,
+then the right drive side should move forward. If I push the left joystick
+forward, then the left drive side should move forward. 
+
+Today the turning was controlled by the joystick. For homework you need to make
+the turn based on a button. If I push the ``X" button, then the robot should
+turn in place in the left direction. You can accomplish this type of turn by
+having the left motors moving backward and having the right motors move forward. 
+
+Another turn you will need to implement is an arc-turn. If I
+push the ``Y" button, then the robot will arc-turn to the right. This means that
+the right motors will not move at all and the left motors will move forward. 
+
+Finally, if I press ``A" at any point in time, everything should stop. 
+
+So in short:
+
+\begin{enumerate}
+\item
+Left joystick controls left motors and right joystick control right motor
+
+\item
+Pressing ``X" makes a pivot turn to the left. 
+
+\item
+Pressing ``Y" makes an arc-turn to the right.
+
+\item
+Pressing ``A" causes the robot to stop. 
+\end{enumerate}
+
+\textbf{Note}: Please make sure that your motor power is not at 1. When turning,
+make sure that your motor values are no greater than .5 and no less than -.5.
+
+\begin{center}
+Good luck and have fun!
+\end{center} 
+\end{document}
