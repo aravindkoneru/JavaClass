@@ -7,6 +7,8 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 
 \theoremstyle{definition}
 \newtheorem{theorem}{Theorem}
@@ -45,15 +47,28 @@ You can find the download link in the bottom right where is says ``Download
 link". Once you download the file, unzip it and then move it to where you would
 like to keep the project. 
 
+\begin{center}
+\includegraphics[scale=.3]{Step1}
+\end{center}
+
 \item
 Open Android Studio. On the welcome screen, there should be an option
 ``Configure". Click this option and then the first option on the next screen
 should be ``SDK Manager". Open the SDK Manager. 
 
+\begin{center}
+\includegraphics[scale=.3]{Step2}
+\includegraphics[scale=.3]{Step3}
+\end{center}
+
 \item
 There is an option on the bottom of the SDK Manager that says ``deselect all".
 Pick this option. Scroll down to API 19. There should be a checkbox right next
 to the API 19 option. Click this box and follow the prompts to install the API. 
+
+\begin{center}
+\includegraphics[scale=.3]{Step4}
+\end{center}
 
 \item
 Wait for the download to finish and then restart Android Studio. 
@@ -62,6 +77,10 @@ Wait for the download to finish and then restart Android Studio.
 You should see an option that says ``Import Project". Click this option and go
 the FTC app folder you downloaded in step 2. Choose the \texttt{build.gradle}
 file and open it. 
+
+\begin{center}
+\includegraphics[scale=.3]{Step5}
+\end{center}
 
 \item
 Wait approx. 30 seconds and then look at the bottom left  of Android Studio. You
