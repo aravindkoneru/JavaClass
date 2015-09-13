@@ -1,0 +1,7 @@
+$ cat .gitignore
+
+*.log
+*.aux
+*.DC_Store
+
+*.swp
