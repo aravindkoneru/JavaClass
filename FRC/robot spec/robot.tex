@@ -1,0 +1,71 @@
+\documentclass[11pt,fleqn]{article}
+
+
+\usepackage[latin1]{inputenc}
+\usepackage{enumerate}
+\usepackage[hang,flushmargin]{footmisc}
+
+\setlength{\oddsidemargin}{0px}
+\setlength{\textwidth}{460px}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{20cm}
+\setlength{\parindent}{0px}
+\setlength{\parskip}{10pt}
+
+\begin{document}
+\begin{center}
+{\Huge
+\textbf{Robot Spec}
+}\\
+\end{center}
+
+\section*{Description}
+In order to acquaint you with the wpilib and writing robot code in java, we have made a ``fake'' robot
+for you to work with. All of the parts and descriptions below are representative of the different parts
+that could be on the robot as well as the configuration they could be in. By writing the code required
+for this fake robot to work, you should gain all the skills necessary to make meaningful contributions
+to the final robot code. 
+
+\section*{Specifications}
+\begin{itemize}
+	\item 
+	Talons in CAN configuration in positions from 0-8
+	\begin{itemize}
+		\item 
+		0-5: Drive
+
+		\item 
+		6-7: Elevator
+
+		\item 
+		8: Intake
+	\end{itemize}
+
+	\item 
+	Encoders in ports 0-7
+	\begin{itemize}
+		\item 
+		0-5: Drive
+
+		\item 
+		6-7: Elevator
+	\end{itemize}
+
+	\item 
+	Solenoid in port 8 for intake
+\end{itemize}
+
+\section*{Expectations}
+\textbf{What you put in is what you'll get out}. We will go over some information every lesson and
+we will assign homework. Homework will be checked for accuracy. Additionally, we have the expectation
+that everyone will be pushing their code frequently to their personal GitHub accounts. If you have questions
+at any point during the lesson, please ask and get clarification; we expect people to have questions and
+by not asking, you're just hurting yourself. 
+
+\begin{center}
+{\huge
+\textbf{Questions?}
+}
+\end{center}
+
+\end{document}
