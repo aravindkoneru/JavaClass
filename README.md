@@ -14,4 +14,6 @@ mentor about the new platform and was met with a decent amount of success.
 ---
 #Java Lessons (FRC)
 
-I will be updating this repo with examples and tutorials relevant to FRC programming once my college apps are done and I have more time. Expect to see updates starting in December. 
+I will be updating this repo with examples and tutorials relevant to FRC programming once my college apps are done and I have more time. Expect to see updates starting in December.
+
+This project is being continued by Tim Magoun.  
